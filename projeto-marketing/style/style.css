@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    user-select: none;
+}
+
+/*    Variaveis    */
+:root {
+    --color1: #06214D;
+    --color2: #4F5359;
+    --color3: #E9ECF2;
+    --color4: #D9CDB8;
+    --color5: #FFFFFF;
+    --color-link: #A58362;
+    --primary-font: "Poppins", system-ui;
+    --font: "Chakra Petch", sans-serif;
+}
+
+body {
+    background-color: var(--color5);
+}
+
+/*    Configuração do Cabeçalho    */
+header {
+    background-color: var(--color1);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*    Configuração da Logo    */
+#logo-img {
+    position: relative;
+    height: 100px;
+    top: 5%;
+}
+
+/*    Configuração do Menu a esquerda da Logo    */
+#left-menu {
+    position: relative;
+    top: 10%;
+}
+
+#left-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+#left-menu a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-link);
+    margin-left: 100px;
+    font-size: 1.2em;
+}
+
+#left-menu a:hover {
+    color: var(--color5);
+}
+
+#left-menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--color5);
+    transform: scale(0);
+}
+
+#left-menu a:hover::after {
+    transition: .5s;
+    transform: scale(1);
+}
+
+/*    Configuração do Menu a direita da Logo    */
+#right-menu {
+    position: relative;
+    top: 10%;
+}
+
+#right-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+#right-menu a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-link);
+    margin-right: 100px;
+    font-size: 1.2em;
+}
+
+#right-menu a:hover {
+    color: var(--color5);
+}
+
+#right-menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--color5);
+    transform: scale(0);
+}
+
+#right-menu a:hover::after {
+    transition: .5s;
+    transform: scale(1);
+}
+
+/*    Configuração do Titulo 'BEM-VINDO'    */
+#welcome-title {
+    position: absolute;
+    font-family: "Baskervville SC", serif;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 7em;
+    color: var(--color5);
+    text-shadow: 1px 2px 5px #ffffff93;
+}
+
+
+/*    Configuração do Subtitulo 'TRANSFORMANDO IDEIAS EM RESULTADO'    */
+#welcome-paragraph {
+    position: absolute;
+    font-family: var(--font);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    color: var(--color-link);
+    text-shadow: 1px 1px 2px #ffffff93;
+}
+
+#first-paragraph {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-paragraph h3 {
+    margin-top: 20px;
+    font-family: var(--font);
+    font-size: 1.5em;
+}
+
+#first-paragraph p {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+#meeting-img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    background-position: center;
+    border-radius: 25px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2.1em;
+    font-family: var(--font);
+    color: var(--color-link);
+}
+
+#historia-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    margin: 50px 0 20px 0;
+}
+
+#historia-section p {
+    padding: 50px;
+    font-size: 1.3em;
+    color: var(--color3);
+}
+
+#historia-section h2 {
+    color: var(--color3);
+}
+
+#about-section h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#percentages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#percentage01 {
+    position: relative;
+    padding: 20px;
+    margin: 50px;
+    height: 300px;
+    width: 500px;
+    font-size: 1.1em;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#percentage01 h3 {
+    color: var(--color1);
+    font-size: 7em;
+    font-family: var(--font);
+    text-align: center;
+}
+
+#working-woman {
+    position: relative;
+    width: 400px;
+}
+
+#percentage02 {
+    position: relative;
+    padding: 20px;
+    margin: 50px;
+    height: 300px;
+    width: 500px;
+    font-size: 1.1em;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#percentage02 h3 {
+    color: var(--color1);
+    font-size: 7em;
+    font-family: var(--font);
+    text-align: center;
+}
+
+#fourth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topics {
+    position: relative;
+    text-align: center;
+    width: 500px;
+}
+
+#topics h3 {
+    text-align: center;
+}
+
+#topics ul {
+    list-style: none;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+#topics li {
+    padding: 10px;
+}
+
+#fifth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fifth-section h2 {
+    margin-top: 100px;
+}
+
+#fifth-section div {
+    margin-top: 20px;
+}
+
+#feedbacks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#feedbacks p {
+    padding: 15px;
+    text-align: center;
+}
+
+.company-logo {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+}
+
+#microsoft-logo,
+#nike-logo {
+    width: 60px;
+}
+
+#microsoft-feedback {
+    position: relative;
+    top: -15px;
+}
+
+#feedbacks i {
+    font-size: 30px;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid var(--color-link);
+}
+
+#contact {
+    background-color: var(--color1);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#contact h3 {
+    padding-top: 50px;
+    color: var(--color-link);
+    font-size: 1.6em;
+    font-family: var(--font);
+    text-indent: 25%;
+    position: relative;
+    left: 100px;
+}
+
+#contact p {
+    color: var(--color5);
+    font-size: 1.1em;
+    width: 300px;
+    position: relative;
+    left: 100px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 30px 30px;
+    position: relative;
+    left: 100px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+    border: transparent;
+}
+
+.full-inputs {
+    width: 100px;
+}
